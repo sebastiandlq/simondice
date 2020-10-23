@@ -1,0 +1,62 @@
+.hidden{
+    display: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-board{
+    max-width: 60vh;
+    max-height: 60vh;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.game__button{
+    width: 50%;
+    height: 50%;
+}
+.green{
+    background-color: #62DC6D;
+}
+.green.light{
+    background-color: #a1fca9;
+}
+.red{
+    background-color: #F92210;
+}
+.red.light{
+    background-color: #f78179;
+}
+.yellow{
+    background-color: #FEF224;
+}
+.yellow.light{
+    background-color: #fcf488;
+}
+.blue{
+    background-color: #0080E1;
+}
+.blue.light{
+    background-color: #7fb8e0;
+}
+.game-start-button{
+    position: absolute;
+    font-size: xx-large;
+    border: none;
+    border-radius: 25px;
+    height: 60px;
+    width: 50%;
+    color: #606568;
+}
