@@ -1,0 +1,27 @@
+@media screen and (min-width: 1800px) {
+    .btn{
+        width: 250px;
+        margin: 0 5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .score{
+        font-size: 26px;
+    }
+    .game-start-button{
+        width: 70%;
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .score{
+        font-size: 24px;
+    }
+    .btn{
+        border: 1px dotted black;
+        font-size: 16px;
+        width: 70px;
+    }
+}

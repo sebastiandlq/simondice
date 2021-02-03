@@ -1,23 +1,55 @@
-.hidden{
-    display: none;
-}
-body{
+*{
     margin: 0;
     padding: 0;
+}
+.hidden{
+    display: none !important;
+}
+body{
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+}
+.logo{
+    position: absolute;
+    top: 0vh;
+    height: 10vh;
+    font-size: 16px;
+}
+.score{
+    position: absolute;
+    top: 10vh;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.game-board{
-    max-width: 60vh;
-    max-height: 60vh;
-    width: 100%;
-    height: 100%;
+.game{
+    position: absolute;
+    top: 30vh;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game-board{ 
+    max-width: 500px;
+    max-height: 500px;
+    width: 60vh;
+    height: 60vh;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -56,7 +88,24 @@ body{
     font-size: xx-large;
     border: none;
     border-radius: 25px;
+    max-width: 600px;
     height: 60px;
     width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #606568;
+}
+.buttons{
+    position: absolute;
+    top: 90vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.btn{
+    font-size: 20px;
+    width: 100px;
+    padding: 0.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #606568;
+    border: none;
 }

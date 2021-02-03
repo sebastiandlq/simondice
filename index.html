@@ -1,17 +1,44 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./responsive.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simon Dice</title> 
     </head>
     <body>
-        <div class="game-board">
-            <div id="green" class="game__button green" data-color="green"></div>
-            <div id="red" class="game__button red" data-color="red"></div>
-            <div id="yellow" class="game__button yellow" data-color="yellow"></div>
-            <div id="blue" class="game__button blue" data-color="blue"></div>
+        <div class="logo">
+            Simon Dice
         </div>
-        <button id="start-button" onclick="startNewGame()" class="game-start-button">Comenzar el Juego!!!</button>
+        <div class="score">
+            <p id="score">Tu puntaci&oacute;n es: 0</p>
+            <p id="high-score">Tu puntaci&oacute;n m&aacute;xima es: 0</p>
+            <p id="message">Modo: F&aacute;cil</p>
+        </div>
+        <div class="game">
+            <div class="game-board">
+                <div id="green" class="game__button green" data-color="green"></div>
+                <div id="red" class="game__button red" data-color="red"></div>
+                <div id="yellow" class="game__button yellow" data-color="yellow"></div>
+                <div id="blue" class="game__button blue" data-color="blue"></div>
+            </div>
+            <button id="start-button" onclick="startNewGame()" class="game-start-button">Comenzar el Juego!!!</button>
+        </div>
+        <div id="difficulties" class="buttons">
+            <button onclick="changeDiffucult(10, 'F&aacute;cil')" class="btn">
+                F&aacute;cil
+            </button>
+            <button onclick="changeDiffucult(20, 'Normal')" class="btn">
+                Normal
+            </button>
+            <button onclick="changeDiffucult(30, 'Dificil')" class="btn">
+                Dificil
+            </button>
+            <button onclick="changeDiffucult(9999, 'Infinito')" class="btn">
+                Infinito
+            </button>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <script src="game.js"></script>
     </body>
