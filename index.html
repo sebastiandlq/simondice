@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <link rel="stylesheet" href="./animation.css">
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="./responsive.css">
+        <link rel="icon" href="logo.png">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Simon Dice</title> 
     </head>
     <body>
-        <div class="logo">
-            Simon Dice
+        <div id="logo" class="logo">
+            <span>S</span><span>I</span><span>M</span><span>O</span><span>N</span>
+            <span>D</span><span>I</span><span>C</span><span>E</span>
         </div>
         <div class="score">
             <p id="score">Tu puntaci&oacute;n es: 0</p>
@@ -41,5 +44,6 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
         <script src="game.js"></script>
+        <script src="animatedLetters.js"></script>
     </body>
 </html>

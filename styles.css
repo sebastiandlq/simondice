@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 .hidden{
-    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+
+    transition: 1s;
 }
 body{
     position: fixed;
@@ -22,8 +26,13 @@ body{
     position: absolute;
     top: 0vh;
     height: 10vh;
-    font-size: 16px;
+    font-family: "Rubik";
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    animation: enterAnimation2 3s linear forwards;
 }
+
 .score{
     position: absolute;
     top: 10vh;
@@ -35,6 +44,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    opacity: 0;
+    animation: fadeIn 1s ease-out 3s forwards;
 }
 .game{
     position: absolute;
@@ -44,6 +56,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: enterAnimation 3s ease-out forwards;
 }
 .game-board{ 
     max-width: 500px;
@@ -93,6 +107,8 @@ body{
     width: 50%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #606568;
+
+    transition: 1s;
 }
 .buttons{
     position: absolute;
@@ -100,6 +116,10 @@ body{
     height: 10vh;
     display: flex;
     align-items: center;
+
+    transition: 1s;
+    opacity: 0;
+    animation: fadeIn 1s ease-out 3s forwards;
 }
 .btn{
     font-size: 20px;
